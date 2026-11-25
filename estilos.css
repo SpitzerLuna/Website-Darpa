@@ -1,0 +1,182 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC:wght@400..700&display=swap');
+
+@font-face{
+	font-family: 'Pacifico-Regular';
+}
+body#corpo {
+	background: url("imagens/fundo.jpg");
+}
+header#cabecalho {
+	border-bottom: solid 2px gray;
+
+}
+
+article#corpo{
+	margin-right: 15px;
+	margin-left: 15px;
+}
+footer#rodape {
+	border-top: solid 2px gray;
+	text-align: center;
+}
+hgroup.titulos h1 {
+	text-transform: uppercase;
+	font-size: 30pt;
+}
+figure.outrasFotos {
+	/*border: solid 3px rgb(0,0,255);*/
+	background-color: lightgray;
+	text-align: center;
+	box-shadow: 0px 0px 20px #000000;
+	border-radius: 80px;
+}
+figure.foto1 {
+	background-color: lightblue;
+	box-shadow: 6px 6px 6px gray;
+	text-align: center;
+	border-radius: 10px;
+	border: solid 8px #000000;
+	width: 25%;
+	padding-top: 5px;
+	float: right;
+	transition: transform 1.5s;
+}
+figure.foto1:hover{
+	transform: rotateZ(10deg);
+}
+figure.foto1 img {
+	width: 95%;
+	height: 150px;
+
+}
+figure.foto1 h4 {
+	margin-top: -4px;
+	margin-bottom: 0px;
+	background-color: yellow;
+}
+span.texto {
+	text-align: justify;
+	font-size: 16pt;
+	font-family: "Baskervville SC", serif;
+	text-indent: 50px;
+}
+
+/*Formatação do menu principal*/
+
+nav#menu h3 {
+	display: none;
+}
+nav#menu ol {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	right: 60px;
+}
+nav#menu li {
+	display: inline-block;
+	background-color: lightgray;
+	padding: 10px;
+	margin: 3px;
+	border-radius: 10px;
+	transition: transform 2s, background-color 2s;
+}
+
+
+nav#menu li:hover {
+	background-color: darkgray;
+	transform: rotateZ(-15deg);
+
+}
+
+nav#menu a {
+	color: black;
+	text-decoration: none;
+}
+nav#menu a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/*Formatação dos títulos principais*/
+
+
+article#corpo h1{
+	background-color: #708090;
+	text-shadow: 2px 2px 2px #F5D327;
+	font-size: 25pt;
+	text-align: center;
+	transition: all 1s;
+}
+article#corpo h1:hover {
+	letter-spacing: 30px;
+}
+hgroup.titulos h1{
+	width: 45%;
+	border-radius: 20px;
+	letter-spacing: -20px;
+	font-size: 30pt;
+	text-transform: uppercase;
+	font-family: Pacifico-Regular.ttf;
+	transition: all 2s;
+
+
+}
+
+hgroup.titulos h1:hover{
+	background-color: blue;
+	color: white;
+	margin-left: 9pt;
+	box-shadow: 6px 6px 6px gray;
+	letter-spacing: 6px;
+	
+	  
+}
+header#cabecalho img.logo{
+	position: absolute;
+    top: 5px;
+    left: 3px;
+}
+
+/*formatação dos Ícones*/
+header#cabecalho img.icone{
+	position: absolute;
+	top: 70px;
+	right: 80px;
+
+}
+
+
+
+
+
+/* Formatação tabela */
+
+table.tabela{
+	border: solid 1px blue;
+	border-spacing: 0px;
+	text-align: center;
+}
+
+table.tabela td{
+	border: solid 1px blue;
+	border-spacing: 0px;
+	transition: all 1s;
+}
+
+table.tabela td:hover{
+	background-color: lightgray;
+	border-radius: 10px;
+	
+
+}
+
+table.tabela caption{
+	background-color: lightgray;
+
+}
+table.tabela th{
+	border: solid 1px blue;
+	border-spacing: 0px;
+}
